@@ -1,0 +1,28 @@
+@use "variables.scss" as *;
+
+footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $marron;
+    background: $negro;
+
+    img {
+        width: 30%;
+    }
+
+    .btn-volver {
+        padding: 5px;
+        // font-size: 1rem;
+        background-color: $negro;
+        color: $blanco;
+        text-decoration: none;
+        border-radius: 100px;
+    }
+
+    .btn-volver:hover {
+        background-color: $marron;
+    }
+        
+}

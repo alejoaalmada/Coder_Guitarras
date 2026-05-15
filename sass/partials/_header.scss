@@ -1,0 +1,46 @@
+@use "variables.scss" as *;
+
+header {
+    background: $negro;
+    padding-block: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        width: 160px;
+        margin-left: 20px;
+    }
+
+    .navbar {
+        width: 35%;
+
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav_it {
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 100px;
+                background-color: $negro;
+                color: $blanco;
+                // font-size: 1rem;
+                text-align: center;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+            }
+
+            a:hover {
+                background-color: $marron;
+            }
+  
+        }
+    }
+    
+}

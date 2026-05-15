@@ -1,0 +1,30 @@
+@use "variables.scss" as *;
+
+.main {
+    background-image: url(../img/fondo_main1.png);
+    background-size: contain;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+        color: $marron;
+        text-shadow: 0px 1px 2px rgb(22,22,22);
+
+        h1 {
+            display:flex;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: $h1_size_m;
+        }
+
+        h2 {
+            display:flex;
+            justify-content: center;
+            font-size: $h2_size_m;
+        }
+
+    }
+}
