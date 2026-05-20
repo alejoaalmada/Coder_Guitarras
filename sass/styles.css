@@ -71,6 +71,7 @@ header .navbar .nav_it a:hover {
 .main .intro h2 {
   display: flex;
   justify-content: center;
+  font-weight: 100;
   font-size: 1.5rem;
 }
 
@@ -87,38 +88,40 @@ header .navbar .nav_it a:hover {
 .text_description {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 1rem;
   align-items: center;
-  margin-bottom: 20px;
 }
 .text_description p {
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 
-.origen, .evolution {
+.origen, .evolution, .guitar {
   width: 90%;
-  max-width: 1100px;
+  max-width: 80vh;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 2rem 0;
 }
-.origen h3, .evolution h3 {
+.origen h3, .evolution h3, .guitar h3 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
-.origen .text_origen, .origen .text_evolution, .evolution .text_origen, .evolution .text_evolution {
+.origen .text_origen, .origen .text_evolution, .origen .text_guitar, .evolution .text_origen, .evolution .text_evolution, .evolution .text_guitar, .guitar .text_origen, .guitar .text_evolution, .guitar .text_guitar {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 1rem;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 1rem;
+  padding: 1rem;
   border-radius: 12px;
   background-color: #BE954D;
 }
-.origen .text_origen p, .origen .text_evolution p, .evolution .text_origen p, .evolution .text_evolution p {
+.origen .text_origen h3, .origen .text_evolution h3, .origen .text_guitar h3, .evolution .text_origen h3, .evolution .text_evolution h3, .evolution .text_guitar h3, .guitar .text_origen h3, .guitar .text_evolution h3, .guitar .text_guitar h3 {
+  margin: 0;
+}
+.origen .text_origen p, .origen .text_evolution p, .origen .text_guitar p, .evolution .text_origen p, .evolution .text_evolution p, .evolution .text_guitar p, .guitar .text_origen p, .guitar .text_evolution p, .guitar .text_guitar p {
   line-height: 1.6;
 }
-.origen .text_origen img, .origen .text_evolution img, .evolution .text_origen img, .evolution .text_evolution img {
+.origen .text_origen img, .origen .text_evolution img, .origen .text_guitar img, .evolution .text_origen img, .evolution .text_evolution img, .evolution .text_guitar img, .guitar .text_origen img, .guitar .text_evolution img, .guitar .text_guitar img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -126,26 +129,72 @@ header .navbar .nav_it a:hover {
   display: block;
 }
 
-footer {
-  padding: 10px;
+.guitarists {
+  width: 100%;
+  max-width: 80vh;
+  padding: 2rem;
+}
+.guitarists .card {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #BE954D;
-  background: #161616;
+  margin: 1rem 0;
+  background-color: #BE954D;
 }
-footer img {
-  width: 30%;
-}
-footer .btn-volver {
-  padding: 5px;
+
+footer {
   background-color: #161616;
   color: #F5E6CC;
-  text-decoration: none;
-  border-radius: 100px;
+  padding: 2rem 1.5rem 3rem;
+  position: relative;
 }
-footer .btn-volver:hover {
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+footer .footer-column h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+footer .footer-column a {
+  display: block;
+  text-decoration: none;
+  color: #BE954D;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+footer .footer-column a:hover {
+  color: #F5E6CC;
+}
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+footer .footer-bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bottom .copyright {
+  color: gray;
+  margin: 0;
+}
+footer .footer-bottom .subir {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
   background-color: #BE954D;
+  color: #161616;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+footer .footer-bottom .subir:hover {
+  transform: translateY(-3px);
+  background-color: #F5E6CC;
 }
 
 /*# sourceMappingURL=styles.css.map */

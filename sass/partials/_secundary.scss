@@ -14,33 +14,36 @@
 .text_description {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 1rem;
     align-items: center;
-    margin-bottom: 20px;
     p {
-        padding-inline: 2rem;
+        padding-inline: 1rem;
     }
 }
 
-.origen, .evolution {
+.origen, .evolution, .guitar {
     width: 90%;
-    max-width: 1100px;
+    max-width: 80vh;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 2rem 0;
     h3 {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 1.5rem;
     }
 
-    .text_origen, .text_evolution {
+    .text_origen, .text_evolution, .text_guitar{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 1rem;
         align-items: center;
-        margin-bottom: 20px;
-        padding: 20px;
+        margin-bottom: 1rem;
+        padding: 1rem;
         border-radius: 12px;
         background-color: $marron;
+
+        h3 {
+            margin: 0;
+        }
 
         p {
             line-height: 1.6;
@@ -56,3 +59,17 @@
 
     }
 }
+
+.guitarists {
+    width: 100%;
+    max-width: 80vh;
+    padding: 2rem;
+
+    .card {
+        display: flex;
+        margin: 1rem 0;
+        background-color: $marron;
+    }
+}
+
+

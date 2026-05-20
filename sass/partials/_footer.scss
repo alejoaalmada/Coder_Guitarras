@@ -1,28 +1,76 @@
 @use "variables.scss" as *;
 
 footer {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $marron;
-    background: $negro;
+    background-color: $negro;
+    color: $blanco;
+    padding: 2rem 1.5rem 3rem;
+    position: relative;
 
-    img {
-        width: 30%;
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
-    .btn-volver {
-        padding: 5px;
-        // font-size: 1rem;
-        background-color: $negro;
-        color: $blanco;
-        text-decoration: none;
-        border-radius: 100px;
+    .footer-column{
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: $marron;
+            margin-bottom: .8rem;
+            font-size: 1rem;
+        }
+
+        a:hover {
+            color: $blanco;
+        }
     }
 
-    .btn-volver:hover {
-        background-color: $marron;
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+        font-size: 1rem;
     }
-        
+
+    .footer-bottom {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyright {
+            color: gray;
+            margin: 0;
+        }
+
+        .subir {
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            background-color: $marron;
+            color: $negro;
+            text-decoration: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+
+        .subir:hover {
+            transform: translateY(-3px);
+            background-color: $blanco;
+        }
+    }
 }
+
+
+
+
+
+    
