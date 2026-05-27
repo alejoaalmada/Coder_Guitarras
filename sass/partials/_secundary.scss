@@ -72,4 +72,64 @@
     }
 }
 
+.form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 2rem;
+    background: #1e1e1e;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    label {
+        color: $blanco;
+        font-size: $h3_size_m;
+    }
+
+    input,
+    textarea {
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: $negro;
+        color: $blanco;
+        font-size: 1rem;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    textarea {
+        resize: none;
+        min-height: 120px;
+    }
+
+
+    input:focus,
+    textarea:focus {
+        background: $negro;
+        box-shadow: 0 0 0 2px $blanco;
+    }
+
+    button {
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: $blanco;
+        color: #111;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+    }
+
+}
+
+
 
