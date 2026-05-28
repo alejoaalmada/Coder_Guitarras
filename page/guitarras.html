@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="../sass/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <title>La Guitarra</title>
@@ -29,19 +33,19 @@
     </main>
 
     <section class="guitar">
-        <article class="text_guitar">
+        <article data-aos="zoom-in" class="text_guitar">
             <h3>Guitarra clásica</h3>
             <p>También llamada guitarra española, utiliza cuerdas de nylon y es muy usada en música clásica, flamenco y folklore.</p>
             <img src="../img/gtr_criolla.jfif" alt="guitarra criolla">
         </article>
 
-        <article  class="text_guitar">
+        <article data-aos="zoom-in" class="text_guitar">
             <h3>Guitarra acústica</h3>
             <p>Usa cuerdas de acero y es común en pop, rock, folk y música acústica en general.</p>
             <img src="../img/gtr_acustica.jpg" alt="guitarra acústica">
         </article>
 
-        <article class="text_guitar">
+        <article data-aos="zoom-in" class="text_guitar">
             <h3>Guitarra eléctrica</h3>
             <p>Permite amplificación y efectos. Fundamental en géneros como rock, blues, jazz y metal.</p>
             <img src="../img/gtr_electrica.webp" alt="guitarra eléctrica">
@@ -89,5 +93,9 @@
             <a href="#inicio" class="subir">↑</a>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

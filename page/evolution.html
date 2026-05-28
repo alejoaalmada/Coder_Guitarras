@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="../sass/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <title>La Guitarra</title>
@@ -29,8 +33,8 @@
     </main>
 
     <section class="origen">
-        <h3>Origen</h3>
-        <article class="text_origen">
+        <h3 data-aos="zoom-in">Origen</h3>
+        <article data-aos="zoom-in" class="text_origen">
             <p>
                 La guitarra tiene una historia muy antigua que se remonta a miles de años.
                 Sus primeros antecedentes aparecen en instrumentos de cuerda utilizados por distintas civilizaciones antiguas, como los egipcios, griegos y pueblos de Medio Oriente.
@@ -38,7 +42,7 @@
             <img src="../img/origen-1.webp" alt="instrumento egipcio">
         </article>
 
-        <article class="text_origen">
+        <article data-aos="zoom-in" class="text_origen">
             <p>
                 Uno de sus principales antecesores fue el Oud, un instrumento árabe de cuerdas pulsadas que influyó fuertemente en el desarrollo de la guitarra moderna.
                 También fueron importantes el laúd europeo y la vihuela española, muy populares durante la Edad Media y el Renacimiento.
@@ -46,14 +50,14 @@
             <img src="../img/origen-2.jfif" alt="laúd">
         </article>
 
-        <article class="text_origen">
+        <article data-aos="zoom-in" class="text_origen">
             <p>
                 Con la llegada de la influencia árabe a España, estos instrumentos comenzaron a transformarse y a combinar características, dando origen a las primeras guitarras reconocibles.
             </p>
             <img src="../img/origen-3.jpg" alt="primeras guitarras">
         </article>
 
-        <article class="text_origen">
+        <article data-aos="zoom-in" class="text_origen">
             <p>
                 Desde sus comienzos, la guitarra fue utilizada para acompañar canciones, transmitir emociones y formar parte de distintas expresiones culturales alrededor del mundo.
             </p>
@@ -62,8 +66,8 @@
     </section>
 
     <section class="evolution">
-        <h3>Evolución</h3>
-        <article class="text_evolution">
+        <h3 data-aos="zoom-in">Evolución</h3>
+        <article data-aos="zoom-in" class="text_evolution">
             <p>
                 A lo largo de los siglos, la guitarra fue cambiando en su forma, tamaño y sonido.
                 Las primeras versiones tenían menos cuerdas y una estructura más simple que la actual.
@@ -71,7 +75,7 @@
             <img src="../img/evolution-1.jfif" alt="Oud">
         </article>
 
-        <article class="text_evolution">
+        <article data-aos="zoom-in" class="text_evolution">
             <p>
                 Durante los siglos XVIII y XIX, luthiers españoles como Antonio de Torres Jurado realizaron importantes mejoras en el diseño del instrumento, aumentando su tamaño y perfeccionando su caja de resonancia.
                 Gracias a estos cambios nació la base de la guitarra clásica moderna.
@@ -79,14 +83,14 @@
             <img src="../img/evolution-2.jpg" alt="Antonio de Torres Jurado">
         </article>
 
-        <article  class="text_evolution">
+        <article data-aos="zoom-in" class="text_evolution">
             <p>
                 En el siglo XX aparecieron nuevos tipos de guitarra, como la guitarra acústica y la guitarra eléctrica, que revolucionaron la música y permitieron explorar nuevos estilos y sonidos.
             </p>
             <img src="../img/evolution-3.jfif" alt="guitarra eléctrica">
         </article>
 
-        <article class="text_evolution">
+        <article data-aos="zoom-in" class="text_evolution">
             <p>
                 Hoy, la guitarra sigue evolucionando con nuevas tecnologías, materiales y diseños, manteniéndose como uno de los instrumentos más populares e influyentes del mundo.
             </p>
@@ -134,5 +138,9 @@
             <a href="#inicio" class="subir">↑</a>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
