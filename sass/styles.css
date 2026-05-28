@@ -133,6 +133,10 @@ header .navbar .nav_it a:hover {
   width: 100%;
   max-width: 80vh;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .guitarists .card {
   display: flex;
@@ -141,11 +145,11 @@ header .navbar .nav_it a:hover {
 }
 
 .form {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 2rem;
-  background: #1e1e1e;
-  border-radius: 16px;
+  max-width: 80%;
+  margin: 40px;
+  padding: 1rem;
+  background: #161616;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -159,9 +163,9 @@ header .navbar .nav_it a:hover {
 .form textarea {
   padding: 14px;
   border: none;
-  border-radius: 10px;
-  background: #161616;
-  color: #F5E6CC;
+  border-radius: 15px;
+  background: #1b1b1b;
+  color: #BE954D;
   font-size: 1rem;
   outline: none;
   transition: 0.3s;
@@ -173,21 +177,21 @@ header .navbar .nav_it a:hover {
 .form input:focus,
 .form textarea:focus {
   background: #161616;
-  box-shadow: 0 0 0 2px #F5E6CC;
+  box-shadow: 0 0 0 2px #BE954D;
 }
 .form button {
   padding: 14px;
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   background: #F5E6CC;
-  color: #111;
+  color: #161616;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 .form button:hover {
-  transform: translateY(-2px);
+  transform: translateY(3px);
   opacity: 0.9;
 }
 
