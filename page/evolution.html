@@ -13,14 +13,18 @@
 </head>
 <body>
     <header id="inicio">
-        <img class="logo" src="../img/logo.png" alt="Logo de la pagina">
-        <nav class="navbar">
-            <ul>
-                <li class="nav_it"><a href="../index.html">Inicio</a></li>
-                <li class="nav_it"><a href="#">Evolución</a></li>
-                <li class="nav_it"><a href="./guitarras.html">Guitarras</a></li>
-                <li class="nav_it"><a href="./guitarristas.html">Guitarristas</a></li>
-                <li class="nav_it"><a href="./contacto.html">Contacto</a></li>
+        <nav>
+            <div class="nav-top">
+                <img src="../img/logo.png" alt="Logo" class="logo">
+                <button id="btn-menu">☰</button>
+            </div>
+
+            <ul id="menu">
+                <li class="it_nav"><a href="../index.html">Inicio</a></li>
+                <li class="it_nav"><a href="./evolution.html">Evolución</a></li>
+                <li class="it_nav"><a href="./guitarras.html">Guitarras</a></li>
+                <li class="it_nav"><a href="./guitarristas.html">Guitarristas</a></li>
+                <li class="it_nav"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -142,5 +146,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="../script.js"></script>
 </body>
 </html>

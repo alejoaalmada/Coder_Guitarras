@@ -17,36 +17,56 @@
 
 header {
   background: #161616;
-  padding-block: 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .logo {
-  width: 160px;
-  margin-left: 20px;
+header .nav-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 2rem;
 }
-header .navbar {
-  width: 35%;
+header .nav-top .logo {
+  width: 150px;
 }
-header .navbar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-header .navbar .nav_it a {
-  display: block;
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 100px;
-  background-color: #161616;
+header .nav-top #btn-menu {
   color: #F5E6CC;
-  text-align: center;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-header .navbar .nav_it a:hover {
-  background-color: #BE954D;
+header #menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100vh;
+  z-index: 1000;
+  background: #161616;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  padding-inline: 2rem;
+  padding-top: 2rem;
+  transition: right 0.3s ease;
+}
+header #menu .it_nav a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #F5E6CC;
+}
+header #menu .it_nav a:hover {
+  color: #BE954D;
+  text-shadow: 1px 1px 14px #F5E6CC;
+}
+header #menu.activo {
+  right: 0;
 }
 
 .main {
@@ -76,7 +96,7 @@ header .navbar .nav_it a:hover {
 }
 
 .secundary {
-  height: 40vh;
+  height: 65vh;
   background-color: none;
   color: #161616;
   margin-top: 10px;
@@ -88,7 +108,7 @@ header .navbar .nav_it a:hover {
 .text_description {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 .text_description p {
@@ -97,7 +117,6 @@ header .navbar .nav_it a:hover {
 
 .origen, .evolution, .guitar {
   width: 90%;
-  max-width: 80vh;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -123,33 +142,29 @@ header .navbar .nav_it a:hover {
 }
 .origen .text_origen img, .origen .text_evolution img, .origen .text_guitar img, .evolution .text_origen img, .evolution .text_evolution img, .evolution .text_guitar img, .guitar .text_origen img, .guitar .text_evolution img, .guitar .text_guitar img {
   width: 100%;
-  height: 200px;
+  height: 12rem;
   object-fit: cover;
   border-radius: 10px;
   display: block;
 }
 
 .guitarists {
-  width: 100%;
-  max-width: 80vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
 }
 .guitarists .card {
-  display: flex;
-  margin: 1rem 0;
   background-color: #BE954D;
 }
 
 .form {
-  max-width: 80%;
-  margin: 40px;
+  width: 90%;
+  margin: 1rem auto;
   padding: 1rem;
   background: #161616;
-  border-radius: 30px;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -161,14 +176,14 @@ header .navbar .nav_it a:hover {
 }
 .form input,
 .form textarea {
-  padding: 14px;
+  padding: 1rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 2rem;
   background: #1b1b1b;
   color: #BE954D;
   font-size: 1rem;
   outline: none;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .form textarea {
   resize: none;
@@ -177,7 +192,9 @@ header .navbar .nav_it a:hover {
 .form input:focus,
 .form textarea:focus {
   background: #161616;
-  box-shadow: 0 0 0 2px #BE954D;
+  box-shadow: 0px 0px 10px 5px #BE954D;
+  -webkit-box-shadow: 0px 0px 10px 5px #BE954D;
+  -moz-box-shadow: 0px 0px 10px 5px #BE954D;
 }
 .form button {
   padding: 14px;
@@ -185,6 +202,7 @@ header .navbar .nav_it a:hover {
   border-radius: 30px;
   background: #F5E6CC;
   color: #161616;
+  font-family: "Google Sans", sans-serif;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -192,7 +210,7 @@ header .navbar .nav_it a:hover {
 }
 .form button:hover {
   transform: translateY(3px);
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 footer {
@@ -238,7 +256,7 @@ footer .footer-bottom .copyright {
 footer .footer-bottom .subir {
   width: 45px;
   height: 45px;
-  border-radius: 100%;
+  border-radius: 20%;
   background-color: #BE954D;
   color: #161616;
   text-decoration: none;
