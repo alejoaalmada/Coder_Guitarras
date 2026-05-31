@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
 }
 * body {
-  background-color: #F5E6CC;
+  background-color: #BE954D;
   min-height: 100vh;
   font-size: 1rem;
   font-family: "Google Sans", sans-serif;
@@ -96,23 +96,40 @@ header #menu.activo {
 }
 
 .secundary {
-  height: 65vh;
+  height: auto;
   background-color: none;
   color: #161616;
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.text_description {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
 }
-.text_description p {
+.secundary h3 {
+  color: #F5E6CC;
+  text-shadow: 0px 0px 10px #161616;
+}
+.secundary .text_description {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.secundary .text_description p {
   padding-inline: 1rem;
+}
+.secundary #video {
+  width: 70%;
+  max-width: 600px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px #161616;
+  transition: transform 0.3s ease;
+}
+.secundary #video:hover {
+  transform: scale(1.05);
 }
 
 .origen, .evolution, .guitar {
@@ -123,6 +140,8 @@ header #menu.activo {
 .origen h3, .evolution h3, .guitar h3 {
   text-align: center;
   margin-bottom: 1.5rem;
+  color: #F5E6CC;
+  text-shadow: 0px 0px 10px #161616;
 }
 .origen .text_origen, .origen .text_evolution, .origen .text_guitar, .evolution .text_origen, .evolution .text_evolution, .evolution .text_guitar, .guitar .text_origen, .guitar .text_evolution, .guitar .text_guitar {
   display: grid;
@@ -132,13 +151,14 @@ header #menu.activo {
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 12px;
-  background-color: #BE954D;
+  background-color: #161616;
 }
 .origen .text_origen h3, .origen .text_evolution h3, .origen .text_guitar h3, .evolution .text_origen h3, .evolution .text_evolution h3, .evolution .text_guitar h3, .guitar .text_origen h3, .guitar .text_evolution h3, .guitar .text_guitar h3 {
   margin: 0;
 }
 .origen .text_origen p, .origen .text_evolution p, .origen .text_guitar p, .evolution .text_origen p, .evolution .text_evolution p, .evolution .text_guitar p, .guitar .text_origen p, .guitar .text_evolution p, .guitar .text_guitar p {
   line-height: 1.6;
+  color: #BE954D;
 }
 .origen .text_origen img, .origen .text_evolution img, .origen .text_guitar img, .evolution .text_origen img, .evolution .text_evolution img, .evolution .text_guitar img, .guitar .text_origen img, .guitar .text_evolution img, .guitar .text_guitar img {
   width: 100%;
@@ -156,7 +176,20 @@ header #menu.activo {
   gap: 1rem;
 }
 .guitarists .card {
-  background-color: #BE954D;
+  background-color: #161616;
+}
+.guitarists .card h3 {
+  color: #F5E6CC;
+}
+.guitarists .card p {
+  color: #BE954D;
+}
+.guitarists .card a {
+  text-decoration: none;
+  color: #161616;
+  background-color: #F5E6CC;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 .form {
@@ -211,6 +244,23 @@ header #menu.activo {
 .form button:hover {
   transform: translateY(3px);
   opacity: 0.7;
+}
+
+.recomendacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.recomendacion h3 {
+  margin: 1rem auto;
+  font-family: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+.recomendacion iframe {
+  margin-bottom: 1rem;
 }
 
 footer {
