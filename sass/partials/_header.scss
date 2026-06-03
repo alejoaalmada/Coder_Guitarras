@@ -12,7 +12,7 @@ header {
         
 
         .logo{
-            width: 8rem;
+            @include img(block,8rem,auto);;
             -webkit-animation: slide-in-blurred-left 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 	        animation: slide-in-blurred-left 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
 

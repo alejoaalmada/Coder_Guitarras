@@ -1,5 +1,38 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .intro h1, .main .intro h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.secundary h3, .origen h3, .evolution h3, .guitar h3, .recomendacion h3 {
+  font-size: 1.25rem;
+  color: #F5E6CC;
+  text-shadow: 0px 0px 10px #161616;
+  margin: 2.5rem auto 1.5rem auto;
+}
+
+.origen .text_guitar h3, .evolution .text_guitar h3, .guitar .text_guitar h3, .guitarists .card h3 {
+  font-size: 1.25rem;
+  color: #F5E6CC;
+  text-shadow: 0px 0px 10px #161616;
+  margin: 1rem auto 0.5rem auto;
+}
+
+.secundary, .secundary .text_description, .origen .text_origen, .origen .text_evolution, .origen .text_guitar, .evolution .text_origen, .evolution .text_evolution, .evolution .text_guitar, .guitar .text_origen, .guitar .text_evolution, .guitar .text_guitar, .guitarists {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* font-family: "Google Sans", sans-serif; */
 * {
   margin: 0;
@@ -25,7 +58,9 @@ header .nav-top {
   padding: 1rem 2rem;
 }
 header .nav-top .logo {
+  display: block;
   width: 8rem;
+  height: auto;
   -webkit-animation: slide-in-blurred-left 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) both;
   animation: slide-in-blurred-left 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
@@ -107,25 +142,9 @@ header #menu.activo {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .intro h2, .main .intro h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
   background-image: url(../img/fondo_main1.png);
   background-size: contain;
   height: 35vh;
-  justify-content: center;
-  align-items: center;
 }
 .main .intro {
   color: #BE954D;
@@ -138,25 +157,6 @@ header #menu.activo {
 .main .intro h2 {
   font-weight: 100;
   font-size: 1.5rem;
-}
-
-.recomendacion h3, .origen h3, .evolution h3, .guitar h3, .secundary h3 {
-  font-size: 1.25rem;
-  color: #F5E6CC;
-  text-shadow: 0px 0px 10px #161616;
-  margin: 2.5rem auto 1.5rem auto;
-}
-
-.guitarists .card h3, .origen .text_guitar h3, .evolution .text_guitar h3, .guitar .text_guitar h3 {
-  font-size: 1.25rem;
-  color: #F5E6CC;
-  text-shadow: 0px 0px 10px #161616;
-  margin: 1rem auto 0.5rem auto;
-}
-
-.guitarists, .origen .text_origen, .origen .text_evolution, .origen .text_guitar, .evolution .text_origen, .evolution .text_evolution, .evolution .text_guitar, .guitar .text_origen, .guitar .text_evolution, .guitar .text_guitar, .secundary .text_description, .secundary {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .secundary {
@@ -203,29 +203,11 @@ header #menu.activo {
   color: #BE954D;
 }
 .origen .text_origen img, .origen .text_evolution img, .origen .text_guitar img, .evolution .text_origen img, .evolution .text_evolution img, .evolution .text_guitar img, .guitar .text_origen img, .guitar .text_evolution img, .guitar .text_guitar img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  border-radius: 10px;
   display: block;
-}
-.origen .text_origen, .origen .text_evolution, .origen .text_guitar, .evolution .text_origen, .evolution .text_evolution, .evolution .text_guitar, .guitar .text_origen, .guitar .text_evolution, .guitar .text_guitar {
-  align-items: center;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 1rem;
-  background-color: #161616;
-}
-.origen .text_origen p, .origen .text_evolution p, .origen .text_guitar p, .evolution .text_origen p, .evolution .text_evolution p, .evolution .text_guitar p, .guitar .text_origen p, .guitar .text_evolution p, .guitar .text_guitar p {
-  line-height: 1.6;
-  color: #BE954D;
-}
-.origen .text_origen img, .origen .text_evolution img, .origen .text_guitar img, .evolution .text_origen img, .evolution .text_evolution img, .evolution .text_guitar img, .guitar .text_origen img, .guitar .text_evolution img, .guitar .text_guitar img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
 }
 .guitarists {
   margin: 1rem auto;
@@ -233,7 +215,15 @@ header #menu.activo {
   justify-items: center;
 }
 .guitarists .card {
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 1rem;
   background-color: #161616;
+}
+.guitarists .card img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .guitarists .card p {
   color: #BE954D;
