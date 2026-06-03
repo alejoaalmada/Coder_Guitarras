@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ponte en contacto para realizar consultas, sugerencias o comentarios sobre el sitio web.">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="../sass/styles.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <title>Contacto | La Guitarra</title>
@@ -28,8 +34,8 @@
 
     <main class="main">
         <div class="intro">
-            <h1>Contacto</h1>
-            <h2>Contactarnos con música.</>
+            <h1 class="animate__animated animate__zoomIn">Contacto</h1>
+            <h2 class="animate__animated animate__zoomIn">Contactarnos con música.</>
         </div>
     </main>
 
@@ -54,9 +60,10 @@
     </section>
 
     <section class="recomendacion">
-        <h3> Recomendaciones musicales</h3>
+        <h3 data-aos="flip-left"> Recomendaciones musicales</h3>
 
-        <iframe 
+        <iframe
+            data-aos="zoom-in-right"
             data-testid="embed-iframe" 
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/track/6RqOz67LecTJeu2BT42TL7?utm_source=generator&theme=0" 
@@ -67,7 +74,8 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
             loading="lazy">
         </iframe>
-        <iframe 
+        <iframe
+            data-aos="zoom-in-left"
             data-testid="embed-iframe" 
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/track/7Dl1rpZGnvjf5iSlqa5QwL?utm_source=generator&theme=0" 
@@ -78,7 +86,8 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
             loading="lazy">
         </iframe>
-        <iframe 
+        <iframe
+            data-aos="zoom-in-right" 
             data-testid="embed-iframe" 
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/track/3kdoR7SgaUPflH5BCfehUP?utm_source=generator&theme=0" 
@@ -89,7 +98,8 @@
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
             loading="lazy">
         </iframe>
-        <iframe 
+        <iframe
+            data-aos="zoom-in-left"
             data-testid="embed-iframe" 
             style="border-radius:12px" 
             src="https://open.spotify.com/embed/track/6uXhSZgnld0OXf0MQ7t6Kl?utm_source=generator&theme=0" 
@@ -142,6 +152,8 @@
             <a href="#inicio" class="subir">↑</a>
         </div>
     </footer>
+
+    <script>AOS.init();</script>
 
     <script src="../script.js"></script>
 </body>
