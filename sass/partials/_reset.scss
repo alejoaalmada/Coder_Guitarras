@@ -5,16 +5,15 @@
 
 
 * {
-    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
 
-    body {
+body {
     background-color: $marron;
     min-height: 100vh;
     font-size: $p_size_m;
     font-family: "Google Sans", sans-serif;
-    }
 }

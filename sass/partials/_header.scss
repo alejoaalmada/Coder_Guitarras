@@ -2,24 +2,21 @@
 
 header {
     background: $negro;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
 
     .nav-top{
         display: flex;
         align-items: center;
-        gap: 1rem;
-        margin: 1rem 2rem;
+        justify-content: space-between;
+        padding:  1rem 2rem;
+        
 
         .logo{
-            width: 150px;
+            width: 8rem;
         }
 
         #btn-menu {
             color: $blanco;
-            width: 100px;
-            margin: 0 auto;
             font-size: 2rem;
             background: none;
             border: none;
