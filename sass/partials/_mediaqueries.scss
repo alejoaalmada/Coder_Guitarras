@@ -1,0 +1,23 @@
+@use "variables.scss" as *;
+
+@media (min-width: 768px) {
+    .origen_grid, .evolution_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .guitar {
+        .text_guitar{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+}
